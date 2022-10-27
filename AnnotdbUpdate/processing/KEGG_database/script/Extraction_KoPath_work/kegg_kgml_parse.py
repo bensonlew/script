@@ -1,0 +1,73 @@
+#!/usr/bin/python3
+# -*- coding: utf-8 -*-
+# @Time    : 2021/10/08 13:20
+# @Author  : 
+from Bio.KEGG import _default_wrap, _wrap_kegg, _write_kegg
+import sys
+import json
+import xml.etree.ElementTree as ET
+
+# Set up line wrapping rules (see Bio.KEGG._wrap_kegg)
+name_wrap = [0, "", (" ", "$", 1, 1), ("-", "$", 1, 1)]
+id_wrap = _default_wrap
+
+class KeggKgml:
+    """Holds info from a KEGG Map record.
+
+    Attributes:
+     - entry       The entry identifier.
+     - name         map names.
+     - class        The definition for the gene.
+     - pathway_map 
+     - module      
+     - dblinks     
+     - 
+
+    """
+
+    def __init__(self):
+        """Initialize new record."""
+        self.entry = ""
+        self.name = ""
+        self.description = ""
+        self.pathway = []
+        self.dblinks = []
+        self.genes = []
+        self.module = []
+        self.orthology = []
+        self.compund = []
+
+    def parse(self, kgml_file):
+        xml = ET.parse(kgml_file)
+        root = xml.getroot()
+        entrys = root.findall("entry")
+        for entry in entrys:
+            if hasattr(entry, "attrib") and "name" in entry.attrib:
+                name_str = entry.attrib["name"]
+                names = name_str.split(" ")
+                for name in names:
+                    try:
+                        type_, id_ = name.split(":")
+                        if type_ == "path":
+                            self.pathway.append(id_)
+                        elif type_ == "ko":
+                            if id_ in self.orthology:
+                                pass
+                            else:
+                                self.orthology.append(id_)
+                    except:
+                        print(kgml_file,name)
+                    
+
+
+
+if __name__ == "__main__":
+    import glob
+    map_files = glob.glob("*.kgml")
+    for map_file in map_files:
+        m = map_file.split(".")[0]
+        kgml = KeggKgml()
+        kgml.parse(map_file)
+        with open(map_file + ".ko", "w") as map2ko:
+            for k in kgml.orthology:
+                map2ko.write("path:{}\tko:{}\n".format(m, k))

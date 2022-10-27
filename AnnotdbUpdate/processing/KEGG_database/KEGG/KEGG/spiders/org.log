@@ -1,0 +1,58 @@
+2021-09-08 09:27:12 [scrapy.downloadermiddlewares.retry] ERROR: Gave up retrying <GET http://202.96.74.141:8080> (failed 4 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2021-09-08 09:27:12 [scrapy.core.scraper] ERROR: Error downloading <GET http://202.96.74.141:8080>
+Traceback (most recent call last):
+  File "c:\users\ruiyang.gao\appdata\local\programs\python\python38\lib\site-packages\scrapy\core\downloader\middleware.py", line 45, in process_request
+    return (yield download_func(request=request, spider=spider))
+twisted.web._newclient.ResponseFailed: [<twisted.python.failure.Failure twisted.internet.error.ConnectionDone: Connection was closed cleanly.>]
+2021-09-29 14:46:28 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method TelnetConsole.start_listening of <scrapy.extensions.telnet.TelnetConsole object at 0x7f9a7e8c6dc0>>
+Traceback (most recent call last):
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/twisted/internet/tcp.py", line 1333, in startListening
+    skt.bind(addr)
+OSError: [Errno 98] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/extensions/telnet.py", line 65, in start_listening
+    self.port = listen_tcp(self.portrange, self.host, self)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/utils/reactor.py", line 22, in listen_tcp
+    return reactor.listenTCP(x, factory, interface=host)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/twisted/internet/posixbase.py", line 568, in listenTCP
+    p.startListening()
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/twisted/internet/tcp.py", line 1335, in startListening
+    raise CannotListenError(self.interface, self.port, le)
+twisted.internet.error.CannotListenError: Couldn't listen on 127.0.0.1:6073: [Errno 98] Address already in use.
+2021-09-29 14:46:28 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/core/engine.py", line 129, in _next_request
+    request = next(slot.start_requests)
+  File "/mnt/ilustre/users/ruiyang.gao/Gry_Code/PyChramProject/KEGG_database/KEGG/KEGG/spiders/kegg.py", line 35, in start_requests
+    error_file = pd.read_csv(r'D:\PyChramProject\KEGG_database\Deal_Error.txt', sep='\t')
+  File "/mnt/ilustre/users/dna/.env/lib/python3.9/site-packages/pandas/io/parsers.py", line 610, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/mnt/ilustre/users/dna/.env/lib/python3.9/site-packages/pandas/io/parsers.py", line 462, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/mnt/ilustre/users/dna/.env/lib/python3.9/site-packages/pandas/io/parsers.py", line 819, in __init__
+    self._engine = self._make_engine(self.engine)
+  File "/mnt/ilustre/users/dna/.env/lib/python3.9/site-packages/pandas/io/parsers.py", line 1050, in _make_engine
+    return mapping[engine](self.f, **self.options)  # type: ignore[call-arg]
+  File "/mnt/ilustre/users/dna/.env/lib/python3.9/site-packages/pandas/io/parsers.py", line 1867, in __init__
+    self._open_handles(src, kwds)
+  File "/mnt/ilustre/users/dna/.env/lib/python3.9/site-packages/pandas/io/parsers.py", line 1362, in _open_handles
+    self.handles = get_handle(
+  File "/mnt/ilustre/users/dna/.env/lib/python3.9/site-packages/pandas/io/common.py", line 642, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: 'D:\\PyChramProject\\KEGG_database\\Deal_Error.txt'
+2021-09-29 14:46:28 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method TelnetConsole.stop_listening of <scrapy.extensions.telnet.TelnetConsole object at 0x7f9a7e8c6dc0>>
+Traceback (most recent call last):
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/extensions/telnet.py", line 72, in stop_listening
+    self.port.stopListening()
+AttributeError: 'TelnetConsole' object has no attribute 'port'

@@ -1,0 +1,166 @@
+ENTRY       ko00010                     Pathway
+NAME        Glycolysis / Gluconeogenesis
+DESCRIPTION Glycolysis is the process of converting glucose into pyruvate and generating small amounts of ATP (energy) and NADH (reducing power). It is a central pathway that produces important precursor metabolites: six-carbon compounds of glucose-6P and fructose-6P and three-carbon compounds of glycerone-P, glyceraldehyde-3P, glycerate-3P, phosphoenolpyruvate, and pyruvate [MD:M00001]. Acetyl-CoA, another important precursor metabolite, is produced by oxidative decarboxylation of pyruvate [MD:M00307]. When the enzyme genes of this pathway are examined in completely sequenced genomes, the reaction steps of three-carbon compounds from glycerone-P to pyruvate form a conserved core module [MD:M00002], which is found in almost all organisms and which sometimes contains operon structures in bacterial genomes. Gluconeogenesis is a synthesis pathway of glucose from noncarbohydrate precursors. It is essentially a reversal of glycolysis with minor variations of alternative paths [MD:M00003].
+CLASS       Metabolism; Carbohydrate metabolism
+PATHWAY_MAP ko00010  Glycolysis / Gluconeogenesis
+MODULE      M00001  Glycolysis (Embden-Meyerhof pathway), glucose => pyruvate [PATH:ko00010]
+            M00002  Glycolysis, core module involving three-carbon compounds [PATH:ko00010]
+            M00003  Gluconeogenesis, oxaloacetate => fructose-6P [PATH:ko00010]
+            M00307  Pyruvate oxidation, pyruvate => acetyl-CoA [PATH:ko00010]
+DBLINKS     GO: 0006096 0006094
+ORTHOLOGY   K00844  hexokinase [EC:2.7.1.1]
+            K12407  glucokinase [EC:2.7.1.2]
+            K00845  glucokinase [EC:2.7.1.2]
+            K25026  glucokinase [EC:2.7.1.2]
+            K01810  glucose-6-phosphate isomerase [EC:5.3.1.9]
+            K06859  glucose-6-phosphate isomerase, archaeal [EC:5.3.1.9]
+            K13810  transaldolase / glucose-6-phosphate isomerase [EC:2.2.1.2 5.3.1.9]
+            K15916  glucose/mannose-6-phosphate isomerase [EC:5.3.1.9 5.3.1.8]
+            K24182  6-phosphofructokinase [EC:2.7.1.11]
+            K00850  6-phosphofructokinase 1 [EC:2.7.1.11]
+            K16370  6-phosphofructokinase 2 [EC:2.7.1.11]
+            K21071  ATP-dependent phosphofructokinase / diphosphate-dependent phosphofructokinase [EC:2.7.1.11 2.7.1.90]
+            K00918  ADP-dependent phosphofructokinase/glucokinase [EC:2.7.1.146 2.7.1.147]
+            K00895  diphosphate-dependent phosphofructokinase [EC:2.7.1.90]
+            K03841  fructose-1,6-bisphosphatase I [EC:3.1.3.11]
+            K02446  fructose-1,6-bisphosphatase II [EC:3.1.3.11]
+            K11532  fructose-1,6-bisphosphatase II / sedoheptulose-1,7-bisphosphatase [EC:3.1.3.11 3.1.3.37]
+            K01086  fructose-1,6-bisphosphatase I / sedoheptulose-1,7-bisphosphatase [EC:3.1.3.11 3.1.3.37]
+            K04041  fructose-1,6-bisphosphatase III [EC:3.1.3.11]
+            K01623  fructose-bisphosphate aldolase, class I [EC:4.1.2.13]
+            K11645  fructose-bisphosphate aldolase, class I [EC:4.1.2.13]
+            K01624  fructose-bisphosphate aldolase, class II [EC:4.1.2.13]
+            K01622  fructose 1,6-bisphosphate aldolase/phosphatase [EC:4.1.2.13 3.1.3.11]
+            K16305  fructose-bisphosphate aldolase / 6-deoxy-5-ketofructose 1-phosphate synthase [EC:4.1.2.13 2.2.1.11]
+            K16306  fructose-bisphosphate aldolase / 2-amino-3,7-dideoxy-D-threo-hept-6-ulosonate synthase [EC:4.1.2.13 2.2.1.10]
+            K01803  triosephosphate isomerase (TIM) [EC:5.3.1.1]
+            K00134  glyceraldehyde 3-phosphate dehydrogenase [EC:1.2.1.12]
+            K10705  glyceraldehyde-3-phosphate dehydrogenase, spermatogenic [EC:1.2.1.12]
+            K00150  glyceraldehyde-3-phosphate dehydrogenase (NAD(P)) [EC:1.2.1.59]
+            K00927  phosphoglycerate kinase [EC:2.7.2.3]
+            K01834  2,3-bisphosphoglycerate-dependent phosphoglycerate mutase [EC:5.4.2.11]
+            K15634  2,3-bisphosphoglycerate-dependent phosphoglycerate mutase [EC:5.4.2.11]
+            K15633  2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+            K15635  2,3-bisphosphoglycerate-independent phosphoglycerate mutase [EC:5.4.2.12]
+            K01689  enolase [EC:4.2.1.11]
+            K00873  pyruvate kinase [EC:2.7.1.40]
+            K12406  pyruvate kinase isozymes R/L [EC:2.7.1.40]
+            K01006  pyruvate, orthophosphate dikinase [EC:2.7.9.1]
+            K01007  pyruvate, water dikinase [EC:2.7.9.2]
+            K00163  pyruvate dehydrogenase E1 component [EC:1.2.4.1]
+            K00161  pyruvate dehydrogenase E1 component alpha subunit [EC:1.2.4.1]
+            K00162  pyruvate dehydrogenase E1 component beta subunit [EC:1.2.4.1]
+            K00627  pyruvate dehydrogenase E2 component (dihydrolipoamide acetyltransferase) [EC:2.3.1.12]
+            K00382  dihydrolipoamide dehydrogenase [EC:1.8.1.4]
+            K00169  pyruvate ferredoxin oxidoreductase alpha subunit [EC:1.2.7.1]
+            K00170  pyruvate ferredoxin oxidoreductase beta subunit [EC:1.2.7.1]
+            K00172  pyruvate ferredoxin oxidoreductase gamma subunit [EC:1.2.7.1]
+            K00189  2-oxoisovalerate/pyruvate ferredoxin oxidoreductase gamma subunit [EC:1.2.7.7 1.2.7.1]
+            K00171  pyruvate ferredoxin oxidoreductase delta subunit [EC:1.2.7.1]
+            K03737  pyruvate-ferredoxin/flavodoxin oxidoreductase [EC:1.2.7.1 1.2.7.-]
+            K00174  2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit alpha [EC:1.2.7.3 1.2.7.11]
+            K00175  2-oxoglutarate/2-oxoacid ferredoxin oxidoreductase subunit beta [EC:1.2.7.3 1.2.7.11]
+            K00016  L-lactate dehydrogenase [EC:1.1.1.27]
+            K01568  pyruvate decarboxylase [EC:4.1.1.1]
+            K13951  alcohol dehydrogenase 1/7 [EC:1.1.1.1]
+            K13980  alcohol dehydrogenase 4 [EC:1.1.1.1]
+            K00121  S-(hydroxymethyl)glutathione dehydrogenase / alcohol dehydrogenase [EC:1.1.1.284 1.1.1.1]
+            K13952  alcohol dehydrogenase 6 [EC:1.1.1.1]
+            K04072  acetaldehyde dehydrogenase / alcohol dehydrogenase [EC:1.2.1.10 1.1.1.1]
+            K13953  alcohol dehydrogenase, propanol-preferring [EC:1.1.1.1]
+            K13954  alcohol dehydrogenase [EC:1.1.1.1]
+            K18857  alcohol dehydrogenase class-P [EC:1.1.1.1]
+            K00001  alcohol dehydrogenase [EC:1.1.1.1]
+            K00002  alcohol dehydrogenase (NADP+) [EC:1.1.1.2]
+            K12957  alcohol/geraniol dehydrogenase (NADP+) [EC:1.1.1.2 1.1.1.183]
+            K13979  alcohol dehydrogenase (NADP+) [EC:1.1.1.2]
+            K14028  methanol dehydrogenase (cytochrome c) subunit 1 [EC:1.1.2.7]
+            K14029  methanol dehydrogenase (cytochrome c) subunit 2 [EC:1.1.2.7]
+            K00114  alcohol dehydrogenase (cytochrome c) [EC:1.1.2.8]
+            K04022  alcohol dehydrogenase
+            K22473  alcohol dehydrogenase (quinone), dehydrogenase subunit [EC:1.1.5.5]
+            K22474  alcohol dehydrogenase (quinone), cytochrome c subunit [EC:1.1.5.5]
+            K00128  aldehyde dehydrogenase (NAD+) [EC:1.2.1.3]
+            K14085  aldehyde dehydrogenase family 7 member A1 [EC:1.2.1.31 1.2.1.8 1.2.1.3]
+            K00149  aldehyde dehydrogenase family 9 member A1 [EC:1.2.1.47 1.2.1.3]
+            K00129  aldehyde dehydrogenase (NAD(P)+) [EC:1.2.1.5]
+            K00138  aldehyde dehydrogenase [EC:1.2.1.-]
+            K01895  acetyl-CoA synthetase [EC:6.2.1.1]
+            K01913  acetate/butyrate---CoA ligase [EC:6.2.1.1 6.2.1.2]
+            K01905  acetate---CoA ligase (ADP-forming) subunit alpha [EC:6.2.1.13]
+            K22224  acetate---CoA ligase (ADP-forming) subunit beta [EC:6.2.1.13]
+            K24012  acetate---CoA ligase (ADP-forming) [EC:6.2.1.13]
+            K01785  aldose 1-epimerase [EC:5.1.3.3]
+            K01085  glucose-1-phosphatase [EC:3.1.3.10]
+            K20866  glucose-1-phosphatase [EC:3.1.3.10]
+            K01835  phosphoglucomutase [EC:5.4.2.2]
+            K15778  phosphomannomutase / phosphoglucomutase [EC:5.4.2.8 5.4.2.2]
+            K15779  phosphoglucomutase / phosphopentomutase [EC:5.4.2.2 5.4.2.7]
+            K01084  glucose-6-phosphatase [EC:3.1.3.9]
+            K00886  polyphosphate glucokinase [EC:2.7.1.63]
+            K08074  ADP-dependent glucokinase [EC:2.7.1.147]
+            K01792  glucose-6-phosphate 1-epimerase [EC:5.1.3.15]
+            K01837  bisphosphoglycerate/phosphoglycerate mutase [EC:5.4.2.4 5.4.2.11]
+            K03103  multiple inositol-polyphosphate phosphatase / 2,3-bisphosphoglycerate 3-phosphatase [EC:3.1.3.62 3.1.3.80]
+            K11389  glyceraldehyde-3-phosphate dehydrogenase (ferredoxin) [EC:1.2.7.6]
+            K00131  glyceraldehyde-3-phosphate dehydrogenase (NADP+) [EC:1.2.1.9]
+            K18978  glyceraldehyde-3-phosphate dehydrogenase [NAD(P)+] [EC:1.2.1.90]
+            K01596  phosphoenolpyruvate carboxykinase (GTP) [EC:4.1.1.32]
+            K01610  phosphoenolpyruvate carboxykinase (ATP) [EC:4.1.1.49]
+            K01222  6-phospho-beta-glucosidase [EC:3.2.1.86]
+            K01223  6-phospho-beta-glucosidase [EC:3.2.1.86]
+            K02777  sugar PTS system EIIA component [EC:2.7.1.-]
+            K02779  glucose PTS system EIICB or EIICBA component [EC:2.7.1.199]
+            K02791  maltose/glucose PTS system EIICB component [EC:2.7.1.199 2.7.1.208]
+            K20118  glucose PTS system EIICBA or EIICB component [EC:2.7.1.199]
+            K02753  beta-glucoside (arbutin/salicin/cellobiose) PTS system EIICB component [EC:2.7.1.-]
+COMPOUND    C00022  Pyruvate
+            C00024  Acetyl-CoA
+            C00031  D-Glucose
+            C00033  Acetate
+            C00036  Oxaloacetate
+            C00068  Thiamin diphosphate
+            C00074  Phosphoenolpyruvate
+            C00084  Acetaldehyde
+            C00103  D-Glucose 1-phosphate
+            C00111  Glycerone phosphate
+            C00118  D-Glyceraldehyde 3-phosphate
+            C00186  (S)-Lactate
+            C00197  3-Phospho-D-glycerate
+            C00221  beta-D-Glucose
+            C00236  3-Phospho-D-glyceroyl phosphate
+            C00267  alpha-D-Glucose
+            C00469  Ethanol
+            C00631  2-Phospho-D-glycerate
+            C00668  alpha-D-Glucose 6-phosphate
+            C01159  2,3-Bisphospho-D-glycerate
+            C01172  beta-D-Glucose 6-phosphate
+            C01451  Salicin
+            C05125  2-(alpha-Hydroxyethyl)thiamine diphosphate
+            C05345  beta-D-Fructose 6-phosphate
+            C05378  beta-D-Fructose 1,6-bisphosphate
+            C06186  Arbutin
+            C06187  Arbutin 6-phosphate
+            C06188  Salicin 6-phosphate
+            C15972  Enzyme N6-(lipoyl)lysine
+            C15973  Enzyme N6-(dihydrolipoyl)lysine
+            C16255  [Dihydrolipoyllysine-residue acetyltransferase] S-acetyldihydrolipoyllysine
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y (ed).
+  TITLE     [Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1980)
+REFERENCE   (map 1)
+  AUTHORS   Nishizuka Y, Seyama Y, Ikai A, Ishimura Y, Kawaguchi A (eds).
+  TITLE     [Cellular Functions and Metabolic Maps] (In Japanese)
+  JOURNAL   Tokyo Kagaku Dojin (1997)
+REFERENCE   
+  AUTHORS   Michal G.
+  TITLE     Biochemical Pathways
+  JOURNAL   Wiley (1999)
+REL_PATHWAY ko00020  Citrate cycle (TCA cycle)
+            ko00030  Pentose phosphate pathway
+            ko00500  Starch and sucrose metabolism
+            ko00620  Pyruvate metabolism
+            ko00640  Propanoate metabolism
+            ko00710  Carbon fixation in photosynthetic organisms
+///

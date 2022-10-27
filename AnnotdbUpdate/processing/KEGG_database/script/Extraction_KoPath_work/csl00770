@@ -1,0 +1,63 @@
+ENTRY       csl00770                    Pathway
+NAME        Pantothenate and CoA biosynthesis - Coccomyxa subellipsoidea
+CLASS       Metabolism; Metabolism of cofactors and vitamins
+PATHWAY_MAP csl00770  Pantothenate and CoA biosynthesis
+MODULE      csl_M00019  Valine/isoleucine biosynthesis, pyruvate => valine / 2-oxobutanoate => isoleucine [PATH:csl00770]
+DBLINKS     GO: 0015940 0015937
+ORGANISM    Coccomyxa subellipsoidea [GN:csl]
+GENE        COCSUDRAFT_37553  acetolactate synthase [KO:K01652] [EC:2.2.1.6]
+            COCSUDRAFT_65817  acetolactate synthase [KO:K01653] [EC:2.2.1.6]
+            COCSUDRAFT_33234  acetohydroxy acid isomeroreductase [KO:K00053] [EC:1.1.1.86]
+            COCSUDRAFT_35014  dihydroxy-acid dehydratase [KO:K01687] [EC:4.2.1.9]
+            COCSUDRAFT_29548  ketopantoate hydroxymethyltransferase [KO:K00606] [EC:2.1.2.11]
+            COCSUDRAFT_12975  Pantoate--beta-alanine ligase [KO:K01918] [EC:6.3.2.1]
+            COCSUDRAFT_37270  DNA/pantothenate metabolism flavo protein [KO:K01922] [EC:6.3.2.51]
+            COCSUDRAFT_36666  putative phosphopantothenoylcysteine decarboxylase [KO:K01598] [EC:4.1.1.36]
+            COCSUDRAFT_55812  Nucleotidylyl transferase [KO:K02201] [EC:2.7.7.3]
+            COCSUDRAFT_28647  dephospho-CoA kinase [KO:K00859] [EC:2.7.1.24]
+            COCSUDRAFT_55677  hypothetical protein [KO:K06133] [EC:2.7.8.-]
+            COCSUDRAFT_28384  4'-phosphopantetheinyl transferase [KO:K06133] [EC:2.7.8.-]
+            COCSUDRAFT_26582  branched-chain amino acid aminotransferase II [KO:K00826] [EC:2.6.1.42]
+            COCSUDRAFT_63092  branched-chain amino acid aminotransferase II [KO:K00826] [EC:2.6.1.42]
+            COCSUDRAFT_18241  Dihydroorotate oxidase [KO:K00207] [EC:1.3.1.2]
+            COCSUDRAFT_11195  D-hydantoinase [KO:K01464] [EC:3.5.2.2]
+            COCSUDRAFT_31641  aldehyde dehydrogenase [KO:K00128] [EC:1.2.1.3]
+            COCSUDRAFT_54894  aldehyde dehydrogenase [KO:K00128] [EC:1.2.1.3]
+COMPOUND    C00010  CoA
+            C00022  Pyruvate
+            C00049  L-Aspartate
+            C00054  Adenosine 3',5'-bisphosphate
+            C00097  L-Cysteine
+            C00099  beta-Alanine
+            C00106  Uracil
+            C00141  3-Methyl-2-oxobutanoic acid
+            C00183  L-Valine
+            C00229  Acyl-carrier protein
+            C00429  5,6-Dihydrouracil
+            C00522  (R)-Pantoate
+            C00750  Spermine
+            C00831  Pantetheine
+            C00864  Pantothenate
+            C00882  Dephospho-CoA
+            C00966  2-Dehydropantoate
+            C01053  (R)-4-Dehydropantoate
+            C01088  (R)-3,3-Dimethylmalate
+            C01134  Pantetheine 4'-phosphate
+            C02642  3-Ureidopropionate
+            C03492  D-4'-Phosphopantothenate
+            C03688  Apo-[acyl-carrier-protein]
+            C04079  N-((R)-Pantothenoyl)-L-cysteine
+            C04272  (R)-2,3-Dihydroxy-3-methylbutanoate
+            C04352  (R)-4'-Phosphopantothenoyl-L-cysteine
+            C05665  3-Aminopropanal
+            C05944  Pantothenol
+            C06010  (S)-2-Acetolactate
+            C18911  (R)-4-Phosphopantoate
+REL_PATHWAY csl00010  Glycolysis / Gluconeogenesis
+            csl00250  Alanine, aspartate and glutamate metabolism
+            csl00270  Cysteine and methionine metabolism
+            csl00330  Arginine and proline metabolism
+            csl00410  beta-Alanine metabolism
+            csl00640  Propanoate metabolism
+KO_PATHWAY  ko00770
+///

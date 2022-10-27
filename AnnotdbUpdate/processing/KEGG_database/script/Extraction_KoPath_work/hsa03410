@@ -1,0 +1,67 @@
+ENTRY       hsa03410                    Pathway
+NAME        Base excision repair - Homo sapiens (human)
+DESCRIPTION Base excision repair (BER) is the predominant DNA damage repair pathway for the processing of small base lesions, derived from oxidation and alkylation damages. BER is normally defined as DNA repair initiated by lesion-specific DNA glycosylases and completed by either of the two sub-pathways: short-patch BER where only one nucleotide is replaced and long-patch BER where 2-13 nucleotides are replaced. Each sub-pathway of BER relies on the formation of protein complexes that assemble at the site of the DNA lesion and facilitate repair in a coordinated fashion. This process of complex formation appears to provide an increase in specificity and efficiency to the BER pathway, thereby facilitating the maintenance of genome integrity by preventing the accumulation of highly toxic repair intermediates.
+CLASS       Genetic Information Processing; Replication and repair
+PATHWAY_MAP hsa03410  Base excision repair
+DRUG        D09730  Olaparib (JAN/USAN/INN)
+            D10079  Rucaparib (USAN/INN)
+            D10157  Rucaparib phosphate (USAN)
+            D10732  Talazoparib (USAN/INN)
+            D10733  Talazoparib tosylate (USAN)
+            D10982  Rucaparib camsylate (USAN)
+            D11426  Pamiparib (USAN/INN)
+DBLINKS     GO: 0006284 0006285 0006286 0006287 0006288
+ORGANISM    Homo sapiens (human) [GN:hsa]
+GENE        4968  OGG1; 8-oxoguanine DNA glycosylase [KO:K03660] [EC:3.2.2.- 4.2.99.18]
+            4913  NTHL1; nth like DNA glycosylase 1 [KO:K10773] [EC:4.2.99.18]
+            79661  NEIL1; nei like DNA glycosylase 1 [KO:K10567] [EC:3.2.2.- 4.2.99.18]
+            252969  NEIL2; nei like DNA glycosylase 2 [KO:K10568] [EC:3.2.2.- 4.2.99.18]
+            55247  NEIL3; nei like DNA glycosylase 3 [KO:K10569]
+            7374  UNG; uracil DNA glycosylase [KO:K03648] [EC:3.2.2.27]
+            23583  SMUG1; single-strand-selective monofunctional uracil-DNA glycosylase 1 [KO:K10800] [EC:3.2.2.-]
+            4595  MUTYH; mutY DNA glycosylase [KO:K03575] [EC:3.2.2.31]
+            4350  MPG; N-methylpurine DNA glycosylase [KO:K03652] [EC:3.2.2.21]
+            8930  MBD4; methyl-CpG binding domain 4, DNA glycosylase [KO:K10801] [EC:3.2.2.-]
+            6996  TDG; thymine DNA glycosylase [KO:K20813] [EC:3.2.2.29]
+            328  APEX1; apurinic/apyrimidinic endodeoxyribonuclease 1 [KO:K10771] [EC:4.2.99.18]
+            27301  APEX2; apurinic/apyrimidinic endodeoxyribonuclease 2 [KO:K10772] [EC:4.2.99.18]
+            5423  POLB; DNA polymerase beta [KO:K02330] [EC:2.7.7.7 4.2.99.-]
+            27343  POLL; DNA polymerase lambda [KO:K03512] [EC:2.7.7.7 4.2.99.-]
+            3146  HMGB1; high mobility group box 1 [KO:K10802]
+            7515  XRCC1; X-ray repair cross complementing 1 [KO:K10803]
+            5111  PCNA; proliferating cell nuclear antigen [KO:K04802]
+            5424  POLD1; DNA polymerase delta 1, catalytic subunit [KO:K02327] [EC:2.7.7.7]
+            5425  POLD2; DNA polymerase delta 2, accessory subunit [KO:K02328]
+            10714  POLD3; DNA polymerase delta 3, accessory subunit [KO:K03504]
+            57804  POLD4; DNA polymerase delta 4, accessory subunit [KO:K03505]
+            5426  POLE; DNA polymerase epsilon, catalytic subunit [KO:K02324] [EC:2.7.7.7]
+            5427  POLE2; DNA polymerase epsilon 2, accessory subunit [KO:K02325] [EC:2.7.7.7]
+            54107  POLE3; DNA polymerase epsilon 3, accessory subunit [KO:K02326] [EC:2.7.7.7]
+            56655  POLE4; DNA polymerase epsilon 4, accessory subunit [KO:K03506] [EC:2.7.7.7]
+            3978  LIG1; DNA ligase 1 [KO:K10747] [EC:6.5.1.1 6.5.1.6 6.5.1.7]
+            3980  LIG3; DNA ligase 3 [KO:K10776] [EC:6.5.1.1]
+            142  PARP1; poly(ADP-ribose) polymerase 1 [KO:K24070] [EC:2.4.2.30]
+            10038  PARP2; poly(ADP-ribose) polymerase 2 [KO:K10798] [EC:2.4.2.30]
+            10039  PARP3; poly(ADP-ribose) polymerase family member 3 [KO:K10798] [EC:2.4.2.30]
+            143  PARP4; poly(ADP-ribose) polymerase family member 4 [KO:K10798] [EC:2.4.2.30]
+            2237  FEN1; flap structure-specific endonuclease 1 [KO:K04799] [EC:3.-.-.-]
+REFERENCE   PMID:17893748
+  AUTHORS   Krwawicz J, Arczewska KD, Speina E, Maciejewska A, Grzesiuk E.
+  TITLE     Bacterial DNA repair genes and their eukaryotic homologues: 1. Mutations in genes involved in base excision repair (BER) and DNA-end processors and their implication in mutagenesis and human disease.
+  JOURNAL   Acta Biochim Pol 54:413-34 (2007)
+REFERENCE   PMID:17337257
+  AUTHORS   Almeida KH, Sobol RW.
+  TITLE     A unified view of base excision repair: lesion-dependent protein complexes regulated by post-translational modification.
+  JOURNAL   DNA Repair (Amst) 6:695-711 (2007)
+            DOI:10.1016/j.dnarep.2007.01.009
+REFERENCE   PMID:21665970
+  AUTHORS   Moen MN, Knaevelsrud I, Haugland GT, Grosvik K, Birkeland NK, Klungland A, Bjelland S
+  TITLE     Uracil-DNA glycosylase of Thermoplasma acidophilum directs long-patch base excision repair, which is promoted by deoxynucleoside triphosphates and ATP/ADP, into short-patch repair.
+  JOURNAL   J Bacteriol 193:4495-508 (2011)
+            DOI:10.1128/JB.00233-11
+REFERENCE   PMID:11436317
+  AUTHORS   Ikeda S, Seki S.
+  TITLE     [Base excision repair: DNA glycosylase and AP endonuclease] Japanese
+  JOURNAL   Tanpakushitsu Kakusan Koso 46:916-23 (2001)
+KO_PATHWAY  ko03410
+///

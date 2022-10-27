@@ -1,0 +1,1715 @@
+2021-10-19 09:56:16 [scrapy.core.engine] ERROR: Error while obtaining start requests
+Traceback (most recent call last):
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/core/engine.py", line 129, in _next_request
+    request = next(slot.start_requests)
+  File "/mnt/ilustre/users/ruiyang.gao/KEGG_Prokaryotes_html/KEGG/KEGG/spiders/kegg.py", line 47, in start_requests
+    print("{} exists").format(id)
+AttributeError: 'NoneType' object has no attribute 'format'
+{} exists
+2021-10-20 13:38:18 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method TelnetConsole.start_listening of <scrapy.extensions.telnet.TelnetConsole object at 0x7fa4381d6fd0>>
+Traceback (most recent call last):
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/twisted/internet/tcp.py", line 1333, in startListening
+    skt.bind(addr)
+OSError: [Errno 98] Address already in use
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/extensions/telnet.py", line 65, in start_listening
+    self.port = listen_tcp(self.portrange, self.host, self)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/utils/reactor.py", line 22, in listen_tcp
+    return reactor.listenTCP(x, factory, interface=host)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/twisted/internet/posixbase.py", line 568, in listenTCP
+    p.startListening()
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/twisted/internet/tcp.py", line 1335, in startListening
+    raise CannotListenError(self.interface, self.port, le)
+twisted.internet.error.CannotListenError: Couldn't listen on 127.0.0.1:6073: [Errno 98] Address already in use.
+2021-10-20 13:38:18 [scrapy.utils.signal] ERROR: Error caught on signal handler: <bound method TelnetConsole.stop_listening of <scrapy.extensions.telnet.TelnetConsole object at 0x7fa4381d6fd0>>
+Traceback (most recent call last):
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/utils/defer.py", line 157, in maybeDeferred_coro
+    result = f(*args, **kw)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/pydispatch/robustapply.py", line 55, in robustApply
+    return receiver(*arguments, **named)
+  File "/mnt/ilustre/users/ruiyang.gao/.local/lib/python3.9/site-packages/scrapy/extensions/telnet.py", line 72, in stop_listening
+    self.port.stopListening()
+AttributeError: 'TelnetConsole' object has no attribute 'port'
+hsa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/hsa/pathway_hsa.txt
+ptr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ptr/pathway_ptr.txt
+pps	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pps/pathway_pps.txt
+ggo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ggo/pathway_ggo.txt
+pon	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pon/pathway_pon.txt
+nle	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nle/pathway_nle.txt
+mcc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mcc/pathway_mcc.txt
+mcf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mcf/pathway_mcf.txt
+csab	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/csab/pathway_csab.txt
+caty	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/caty/pathway_caty.txt
+rro	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/rro/pathway_rro.txt
+rbb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/rbb/pathway_rbb.txt
+tfn	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tfn/pathway_tfn.txt
+cjc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cjc/pathway_cjc.txt
+sbq	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sbq/pathway_sbq.txt
+mmur	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mmur/pathway_mmur.txt
+mmu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mmu/pathway_mmu.txt
+mcal	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mcal/pathway_mcal.txt
+mpah	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mpah/pathway_mpah.txt
+rno	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/rno/pathway_rno.txt
+mcoc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mcoc/pathway_mcoc.txt
+mun	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mun/pathway_mun.txt
+cge	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cge/pathway_cge.txt
+pleu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pleu/pathway_pleu.txt
+ngi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ngi/pathway_ngi.txt
+hgl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/hgl/pathway_hgl.txt
+ccan	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ccan/pathway_ccan.txt
+ocu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ocu/pathway_ocu.txt
+tup	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tup/pathway_tup.txt
+cfa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cfa/pathway_cfa.txt
+vvp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/vvp/pathway_vvp.txt
+aml	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aml/pathway_aml.txt
+umr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/umr/pathway_umr.txt
+uah	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/uah/pathway_uah.txt
+oro	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/oro/pathway_oro.txt
+elk	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/elk/pathway_elk.txt
+mpuf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mpuf/pathway_mpuf.txt
+eju	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/eju/pathway_eju.txt
+fca	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fca/pathway_fca.txt
+ptg	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ptg/pathway_ptg.txt
+ppad	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ppad/pathway_ppad.txt
+aju	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aju/pathway_aju.txt
+hhv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/hhv/pathway_hhv.txt
+bta	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bta/pathway_bta.txt
+bom	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bom/pathway_bom.txt
+biu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/biu/pathway_biu.txt
+bbub	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bbub/pathway_bbub.txt
+chx	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/chx/pathway_chx.txt
+oas	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/oas/pathway_oas.txt
+oda	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/oda/pathway_oda.txt
+ssc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ssc/pathway_ssc.txt
+cfr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cfr/pathway_cfr.txt
+cdk	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cdk/pathway_cdk.txt
+bacu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bacu/pathway_bacu.txt
+lve	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lve/pathway_lve.txt
+oor	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/oor/pathway_oor.txt
+dle	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dle/pathway_dle.txt
+pcad	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pcad/pathway_pcad.txt
+ecb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ecb/pathway_ecb.txt
+epz	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/epz/pathway_epz.txt
+eai	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/eai/pathway_eai.txt
+myb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/myb/pathway_myb.txt
+myd	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/myd/pathway_myd.txt
+mmyo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mmyo/pathway_mmyo.txt
+mna	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mna/pathway_mna.txt
+hai	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/hai/pathway_hai.txt
+dro	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dro/pathway_dro.txt
+shon	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/shon/pathway_shon.txt
+ajm	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ajm/pathway_ajm.txt
+mmf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mmf/pathway_mmf.txt
+pale	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pale/pathway_pale.txt
+ray	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ray/pathway_ray.txt
+mjv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mjv/pathway_mjv.txt
+lav	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lav/pathway_lav.txt
+tmu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tmu/pathway_tmu.txt
+mdo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mdo/pathway_mdo.txt
+shr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/shr/pathway_shr.txt
+pcw	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pcw/pathway_pcw.txt
+oaa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/oaa/pathway_oaa.txt
+gga	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/gga/pathway_gga.txt
+mgp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mgp/pathway_mgp.txt
+cjo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cjo/pathway_cjo.txt
+nmel	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nmel/pathway_nmel.txt
+apla	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/apla/pathway_apla.txt
+acyg	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/acyg/pathway_acyg.txt
+tgu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tgu/pathway_tgu.txt
+lsr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lsr/pathway_lsr.txt
+scan	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/scan/pathway_scan.txt
+pmoa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pmoa/pathway_pmoa.txt
+gfr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/gfr/pathway_gfr.txt
+fab	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fab/pathway_fab.txt
+phi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/phi/pathway_phi.txt
+pmaj	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pmaj/pathway_pmaj.txt
+ccae	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ccae/pathway_ccae.txt
+ccw	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ccw/pathway_ccw.txt
+etl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/etl/pathway_etl.txt
+fpg	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fpg/pathway_fpg.txt
+fch	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fch/pathway_fch.txt
+clv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/clv/pathway_clv.txt
+egz	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/egz/pathway_egz.txt
+nni	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nni/pathway_nni.txt
+acun	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/acun/pathway_acun.txt
+padl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/padl/pathway_padl.txt
+aam	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aam/pathway_aam.txt
+asn	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/asn/pathway_asn.txt
+amj	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/amj/pathway_amj.txt
+pss	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pss/pathway_pss.txt
+cmy	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cmy/pathway_cmy.txt
+cpic	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cpic/pathway_cpic.txt
+tst	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tst/pathway_tst.txt
+acs	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/acs/pathway_acs.txt
+pvt	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pvt/pathway_pvt.txt
+pbi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pbi/pathway_pbi.txt
+pmur	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pmur/pathway_pmur.txt
+tsr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tsr/pathway_tsr.txt
+pgut	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pgut/pathway_pgut.txt
+pmua	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pmua/pathway_pmua.txt
+zvi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/zvi/pathway_zvi.txt
+gja	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/gja/pathway_gja.txt
+xla	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/xla/pathway_xla.txt
+xtr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/xtr/pathway_xtr.txt
+npr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/npr/pathway_npr.txt
+dre	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dre/pathway_dre.txt
+srx	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/srx/pathway_srx.txt
+sanh	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sanh/pathway_sanh.txt
+sgh	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sgh/pathway_sgh.txt
+ccar	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ccar/pathway_ccar.txt
+caua	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/caua/pathway_caua.txt
+ipu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ipu/pathway_ipu.txt
+phyp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/phyp/pathway_phyp.txt
+amex	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/amex/pathway_amex.txt
+eee	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/eee/pathway_eee.txt
+tru	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tru/pathway_tru.txt
+tng	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tng/pathway_tng.txt
+lco	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lco/pathway_lco.txt
+ncc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ncc/pathway_ncc.txt
+ely	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ely/pathway_ely.txt
+sluc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sluc/pathway_sluc.txt
+msam	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/msam/pathway_msam.txt
+mze	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mze/pathway_mze.txt
+onl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/onl/pathway_onl.txt
+oau	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/oau/pathway_oau.txt
+ola	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ola/pathway_ola.txt
+xma	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/xma/pathway_xma.txt
+xco	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/xco/pathway_xco.txt
+pret	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pret/pathway_pret.txt
+cvg	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cvg/pathway_cvg.txt
+nfu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nfu/pathway_nfu.txt
+kmr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/kmr/pathway_kmr.txt
+alim	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/alim/pathway_alim.txt
+aoce	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aoce/pathway_aoce.txt
+csem	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/csem/pathway_csem.txt
+pov	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pov/pathway_pov.txt
+lcf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lcf/pathway_lcf.txt
+sdu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sdu/pathway_sdu.txt
+slal	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/slal/pathway_slal.txt
+xgl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/xgl/pathway_xgl.txt
+hcq	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/hcq/pathway_hcq.txt
+bpec	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bpec/pathway_bpec.txt
+malb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/malb/pathway_malb.txt
+sasa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sasa/pathway_sasa.txt
+otw	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/otw/pathway_otw.txt
+omy	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/omy/pathway_omy.txt
+salp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/salp/pathway_salp.txt
+els	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/els/pathway_els.txt
+sfm	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sfm/pathway_sfm.txt
+pki	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pki/pathway_pki.txt
+loc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/loc/pathway_loc.txt
+pspa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pspa/pathway_pspa.txt
+arut	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/arut/pathway_arut.txt
+lcm	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lcm/pathway_lcm.txt
+cmk	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cmk/pathway_cmk.txt
+rtp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/rtp/pathway_rtp.txt
+bfo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bfo/pathway_bfo.txt
+cin	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cin/pathway_cin.txt
+sclv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sclv/pathway_sclv.txt
+spu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/spu/pathway_spu.txt
+aplc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aplc/pathway_aplc.txt
+sko	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sko/pathway_sko.txt
+dme	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dme/pathway_dme.txt
+der	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/der/pathway_der.txt
+dse	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dse/pathway_dse.txt
+dsi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dsi/pathway_dsi.txt
+dya	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dya/pathway_dya.txt
+dan	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dan/pathway_dan.txt
+dsr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dsr/pathway_dsr.txt
+dpo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dpo/pathway_dpo.txt
+dpe	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dpe/pathway_dpe.txt
+dmn	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dmn/pathway_dmn.txt
+dwi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dwi/pathway_dwi.txt
+dgr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dgr/pathway_dgr.txt
+dmo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dmo/pathway_dmo.txt
+daz	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/daz/pathway_daz.txt
+dnv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dnv/pathway_dnv.txt
+dhe	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dhe/pathway_dhe.txt
+dvi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dvi/pathway_dvi.txt
+mde	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mde/pathway_mde.txt
+lcq	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lcq/pathway_lcq.txt
+aga	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aga/pathway_aga.txt
+acoz	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/acoz/pathway_acoz.txt
+aag	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aag/pathway_aag.txt
+aalb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aalb/pathway_aalb.txt
+cqu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cqu/pathway_cqu.txt
+cpii	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cpii/pathway_cpii.txt
+ame	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ame/pathway_ame.txt
+bim	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bim/pathway_bim.txt
+bter	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bter/pathway_bter.txt
+ccal	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ccal/pathway_ccal.txt
+obb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/obb/pathway_obb.txt
+soc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/soc/pathway_soc.txt
+mpha	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mpha/pathway_mpha.txt
+aec	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aec/pathway_aec.txt
+acep	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/acep/pathway_acep.txt
+pbar	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pbar/pathway_pbar.txt
+vem	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/vem/pathway_vem.txt
+hst	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/hst/pathway_hst.txt
+dqu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dqu/pathway_dqu.txt
+cfo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cfo/pathway_cfo.txt
+lhu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lhu/pathway_lhu.txt
+pgc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pgc/pathway_pgc.txt
+obo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/obo/pathway_obo.txt
+pcf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pcf/pathway_pcf.txt
+nvi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nvi/pathway_nvi.txt
+csol	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/csol/pathway_csol.txt
+mdl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mdl/pathway_mdl.txt
+tca	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tca/pathway_tca.txt
+dpa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dpa/pathway_dpa.txt
+atd	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/atd/pathway_atd.txt
+nvl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nvl/pathway_nvl.txt
+bmor	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bmor/pathway_bmor.txt
+bman	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bman/pathway_bman.txt
+dpl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dpl/pathway_dpl.txt
+pmac	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pmac/pathway_pmac.txt
+prap	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/prap/pathway_prap.txt
+zce	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/zce/pathway_zce.txt
+haw	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/haw/pathway_haw.txt
+tnl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tnl/pathway_tnl.txt
+pxy	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pxy/pathway_pxy.txt
+api	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/api/pathway_api.txt
+dnx	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dnx/pathway_dnx.txt
+ags	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ags/pathway_ags.txt
+rmd	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/rmd/pathway_rmd.txt
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+btab png complete
+btab kgml complete
+btab png complete
+dci	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dci/pathway_dci.txt
+clec	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/clec/pathway_clec.txt
+nlu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nlu/pathway_nlu.txt
+phu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/phu/pathway_phu.txt
+zne	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/zne/pathway_zne.txt
+fcd	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fcd/pathway_fcd.txt
+dpx	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dpx/pathway_dpx.txt
+pvm	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pvm/pathway_pvm.txt
+eaf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/eaf/pathway_eaf.txt
+isc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/isc/pathway_isc.txt
+dsv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dsv/pathway_dsv.txt
+tut	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tut/pathway_tut.txt
+dpte	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dpte/pathway_dpte.txt
+cscu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cscu/pathway_cscu.txt
+ptep	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ptep/pathway_ptep.txt
+cel	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cel/pathway_cel.txt
+cbr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cbr/pathway_cbr.txt
+bmy	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bmy/pathway_bmy.txt
+loa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/loa/pathway_loa.txt
+nai	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nai/pathway_nai.txt
+tsp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tsp/pathway_tsp.txt
+hro	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/hro/pathway_hro.txt
+lgi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lgi/pathway_lgi.txt
+pcan	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pcan/pathway_pcan.txt
+crg	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/crg/pathway_crg.txt
+myi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/myi/pathway_myi.txt
+obi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/obi/pathway_obi.txt
+lak	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lak/pathway_lak.txt
+smm	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/smm/pathway_smm.txt
+shx	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/shx/pathway_shx.txt
+ovi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ovi/pathway_ovi.txt
+egl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/egl/pathway_egl.txt
+nve	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nve/pathway_nve.txt
+epa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/epa/pathway_epa.txt
+adf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/adf/pathway_adf.txt
+amil	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/amil/pathway_amil.txt
+pdam	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pdam/pathway_pdam.txt
+spis	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/spis/pathway_spis.txt
+dgt	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dgt/pathway_dgt.txt
+hmg	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/hmg/pathway_hmg.txt
+tad	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tad/pathway_tad.txt
+aqu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aqu/pathway_aqu.txt
+ath	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ath/pathway_ath.txt
+aly	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aly/pathway_aly.txt
+crb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/crb/pathway_crb.txt
+csat	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/csat/pathway_csat.txt
+eus	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/eus/pathway_eus.txt
+brp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/brp/pathway_brp.txt
+bna	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bna/pathway_bna.txt
+boe	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/boe/pathway_boe.txt
+rsz	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/rsz/pathway_rsz.txt
+thj	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/thj/pathway_thj.txt
+cpap	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cpap/pathway_cpap.txt
+cit	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cit/pathway_cit.txt
+cic	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cic/pathway_cic.txt
+tcc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tcc/pathway_tcc.txt
+gra	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/gra/pathway_gra.txt
+ghi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ghi/pathway_ghi.txt
+gab	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/gab/pathway_gab.txt
+dzi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dzi/pathway_dzi.txt
+egr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/egr/pathway_egr.txt
+gmx	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/gmx/pathway_gmx.txt
+gsj	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/gsj/pathway_gsj.txt
+pvu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pvu/pathway_pvu.txt
+vra	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/vra/pathway_vra.txt
+var	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/var/pathway_var.txt
+vun	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/vun/pathway_vun.txt
+ccaj	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ccaj/pathway_ccaj.txt
+aprc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aprc/pathway_aprc.txt
+mtr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mtr/pathway_mtr.txt
+cam	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cam/pathway_cam.txt
+lja	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lja/pathway_lja.txt
+adu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/adu/pathway_adu.txt
+aip	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aip/pathway_aip.txt
+ahf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ahf/pathway_ahf.txt
+lang	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lang/pathway_lang.txt
+fve	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fve/pathway_fve.txt
+rcn	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/rcn/pathway_rcn.txt
+pper	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pper/pathway_pper.txt
+pmum	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pmum/pathway_pmum.txt
+pavi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pavi/pathway_pavi.txt
+pdul	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pdul/pathway_pdul.txt
+mdm	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mdm/pathway_mdm.txt
+pxb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pxb/pathway_pxb.txt
+zju	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/zju/pathway_zju.txt
+mnt	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mnt/pathway_mnt.txt
+csv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/csv/pathway_csv.txt
+cmo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cmo/pathway_cmo.txt
+bhj	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bhj/pathway_bhj.txt
+mcha	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mcha/pathway_mcha.txt
+cmax	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cmax/pathway_cmax.txt
+cmos	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cmos/pathway_cmos.txt
+cpep	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cpep/pathway_cpep.txt
+rcu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/rcu/pathway_rcu.txt
+jcu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/jcu/pathway_jcu.txt
+hbr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/hbr/pathway_hbr.txt
+mesc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mesc/pathway_mesc.txt
+pop	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pop/pathway_pop.txt
+peu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/peu/pathway_peu.txt
+palz	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/palz/pathway_palz.txt
+jre	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/jre/pathway_jre.txt
+qsu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/qsu/pathway_qsu.txt
+qlo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/qlo/pathway_qlo.txt
+twl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/twl/pathway_twl.txt
+vvi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/vvi/pathway_vvi.txt
+vri	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/vri/pathway_vri.txt
+sly	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sly/pathway_sly.txt
+spen	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/spen/pathway_spen.txt
+sot	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sot/pathway_sot.txt
+cann	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cann/pathway_cann.txt
+nta	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nta/pathway_nta.txt
+nsy	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nsy/pathway_nsy.txt
+nto	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nto/pathway_nto.txt
+nau	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nau/pathway_nau.txt
+ini	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ini/pathway_ini.txt
+sind	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sind/pathway_sind.txt
+oeu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/oeu/pathway_oeu.txt
+egt	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/egt/pathway_egt.txt
+han	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/han/pathway_han.txt
+lsv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lsv/pathway_lsv.txt
+ccav	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ccav/pathway_ccav.txt
+dcr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dcr/pathway_dcr.txt
+bvg	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bvg/pathway_bvg.txt
+soe	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/soe/pathway_soe.txt
+cqi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cqi/pathway_cqi.txt
+nnu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nnu/pathway_nnu.txt
+psom	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/psom/pathway_psom.txt
+osa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/osa/pathway_osa.txt
+dosa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dosa/pathway_dosa.txt
+obr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/obr/pathway_obr.txt
+bdi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bdi/pathway_bdi.txt
+ats	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ats/pathway_ats.txt
+tdc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tdc/pathway_tdc.txt
+sbi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sbi/pathway_sbi.txt
+zma	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/zma/pathway_zma.txt
+sita	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sita/pathway_sita.txt
+pvir	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pvir/pathway_pvir.txt
+pda	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pda/pathway_pda.txt
+egu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/egu/pathway_egu.txt
+mus	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mus/pathway_mus.txt
+dct	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dct/pathway_dct.txt
+peq	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/peq/pathway_peq.txt
+aof	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aof/pathway_aof.txt
+atr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/atr/pathway_atr.txt
+smo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/smo/pathway_smo.txt
+ppp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ppp/pathway_ppp.txt
+cre	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cre/pathway_cre.txt
+vcn	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/vcn/pathway_vcn.txt
+mng	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mng/pathway_mng.txt
+csl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/csl/pathway_csl.txt
+cvr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cvr/pathway_cvr.txt
+apro	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/apro/pathway_apro.txt
+olu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/olu/pathway_olu.txt
+ota	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ota/pathway_ota.txt
+bpg	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bpg/pathway_bpg.txt
+mis	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mis/pathway_mis.txt
+mpp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mpp/pathway_mpp.txt
+cme	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cme/pathway_cme.txt
+gsl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/gsl/pathway_gsl.txt
+ccp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ccp/pathway_ccp.txt
+sce	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sce/pathway_sce.txt
+ago	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ago/pathway_ago.txt
+erc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/erc/pathway_erc.txt
+kla	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/kla/pathway_kla.txt
+kmx	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/kmx/pathway_kmx.txt
+lth	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lth/pathway_lth.txt
+vpo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/vpo/pathway_vpo.txt
+zro	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/zro/pathway_zro.txt
+cgr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cgr/pathway_cgr.txt
+ncs	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ncs/pathway_ncs.txt
+ndi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ndi/pathway_ndi.txt
+tpf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tpf/pathway_tpf.txt
+tbl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tbl/pathway_tbl.txt
+tdl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tdl/pathway_tdl.txt
+tgb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tgb/pathway_tgb.txt
+kaf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/kaf/pathway_kaf.txt
+zmk	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/zmk/pathway_zmk.txt
+ppa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ppa/pathway_ppa.txt
+dha	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dha/pathway_dha.txt
+pic	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pic/pathway_pic.txt
+pgu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pgu/pathway_pgu.txt
+spaa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/spaa/pathway_spaa.txt
+lel	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lel/pathway_lel.txt
+cal	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cal/pathway_cal.txt
+ctp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ctp/pathway_ctp.txt
+cot	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cot/pathway_cot.txt
+cdu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cdu/pathway_cdu.txt
+cten	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cten/pathway_cten.txt
+yli	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/yli/pathway_yli.txt
+clu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/clu/pathway_clu.txt
+clus	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/clus/pathway_clus.txt
+caur	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/caur/pathway_caur.txt
+slb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/slb/pathway_slb.txt
+pkz	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pkz/pathway_pkz.txt
+bnn	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bnn/pathway_bnn.txt
+bbrx	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bbrx/pathway_bbrx.txt
+ncr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ncr/pathway_ncr.txt
+nte	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nte/pathway_nte.txt
+smp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/smp/pathway_smp.txt
+pan	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pan/pathway_pan.txt
+ttt	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ttt/pathway_ttt.txt
+mtm	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mtm/pathway_mtm.txt
+cthr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cthr/pathway_cthr.txt
+mgr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mgr/pathway_mgr.txt
+tmn	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tmn/pathway_tmn.txt
+ssck	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ssck/pathway_ssck.txt
+fgr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fgr/pathway_fgr.txt
+fpu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fpu/pathway_fpu.txt
+fvr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fvr/pathway_fvr.txt
+fox	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fox/pathway_fox.txt
+nhe	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nhe/pathway_nhe.txt
+tre	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tre/pathway_tre.txt
+trr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/trr/pathway_trr.txt
+maw	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/maw/pathway_maw.txt
+maj	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/maj/pathway_maj.txt
+cmt	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cmt/pathway_cmt.txt
+plj	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/plj/pathway_plj.txt
+val	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/val/pathway_val.txt
+vda	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/vda/pathway_vda.txt
+cfj	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cfj/pathway_cfj.txt
+sapo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sapo/pathway_sapo.txt
+ela	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ela/pathway_ela.txt
+pfy	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pfy/pathway_pfy.txt
+ssl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ssl/pathway_ssl.txt
+bfu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bfu/pathway_bfu.txt
+mbe	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mbe/pathway_mbe.txt
+psco	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/psco/pathway_psco.txt
+glz	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/glz/pathway_glz.txt
+ani	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ani/pathway_ani.txt
+afm	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/afm/pathway_afm.txt
+act	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/act/pathway_act.txt
+nfi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nfi/pathway_nfi.txt
+aor	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aor/pathway_aor.txt
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+ang png complete
+ang kgml complete
+ang png complete
+afv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/afv/pathway_afv.txt
+pcs	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pcs/pathway_pcs.txt
+pdp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pdp/pathway_pdp.txt
+tmf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tmf/pathway_tmf.txt
+trg	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/trg/pathway_trg.txt
+cim	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cim/pathway_cim.txt
+cpw	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cpw/pathway_cpw.txt
+pbl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pbl/pathway_pbl.txt
+pbn	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pbn/pathway_pbn.txt
+ure	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ure/pathway_ure.txt
+abe	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/abe/pathway_abe.txt
+tve	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tve/pathway_tve.txt
+aje	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aje/pathway_aje.txt
+bgh	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bgh/pathway_bgh.txt
+pno	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pno/pathway_pno.txt
+pte	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pte/pathway_pte.txt
+bze	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bze/pathway_bze.txt
+bsc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bsc/pathway_bsc.txt
+bor	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bor/pathway_bor.txt
+aalt	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aalt/pathway_aalt.txt
+ztr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ztr/pathway_ztr.txt
+pfj	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pfj/pathway_pfj.txt
+bcom	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bcom/pathway_bcom.txt
+npa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/npa/pathway_npa.txt
+tml	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tml/pathway_tml.txt
+spo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/spo/pathway_spo.txt
+cne	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cne/pathway_cne.txt
+cnb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cnb/pathway_cnb.txt
+cgi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cgi/pathway_cgi.txt
+tms	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tms/pathway_tms.txt
+tasa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tasa/pathway_tasa.txt
+ppl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ppl/pathway_ppl.txt
+tvs	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tvs/pathway_tvs.txt
+dsq	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dsq/pathway_dsq.txt
+pco	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pco/pathway_pco.txt
+shs	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/shs/pathway_shs.txt
+hir	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/hir/pathway_hir.txt
+psq	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/psq/pathway_psq.txt
+adl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/adl/pathway_adl.txt
+fme	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fme/pathway_fme.txt
+gtr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/gtr/pathway_gtr.txt
+lbc	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lbc/pathway_lbc.txt
+mpr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mpr/pathway_mpr.txt
+mrr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mrr/pathway_mrr.txt
+cci	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cci/pathway_cci.txt
+scm	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/scm/pathway_scm.txt
+abp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/abp/pathway_abp.txt
+abv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/abv/pathway_abv.txt
+cput	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cput/pathway_cput.txt
+sla	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sla/pathway_sla.txt
+wse	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/wse/pathway_wse.txt
+wic	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/wic/pathway_wic.txt
+uma	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/uma/pathway_uma.txt
+pfp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pfp/pathway_pfp.txt
+mgl	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mgl/pathway_mgl.txt
+mrt	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mrt/pathway_mrt.txt
+msym	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/msym/pathway_msym.txt
+pgr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pgr/pathway_pgr.txt
+mlr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mlr/pathway_mlr.txt
+ecu	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ecu/pathway_ecu.txt
+ein	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ein/pathway_ein.txt
+ehe	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ehe/pathway_ehe.txt
+ero	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ero/pathway_ero.txt
+nce	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/nce/pathway_nce.txt
+mbr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/mbr/pathway_mbr.txt
+sre	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/sre/pathway_sre.txt
+ddi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ddi/pathway_ddi.txt
+dpp	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dpp/pathway_dpp.txt
+dfa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/dfa/pathway_dfa.txt
+ehi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ehi/pathway_ehi.txt
+edi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/edi/pathway_edi.txt
+eiv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/eiv/pathway_eiv.txt
+acan	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/acan/pathway_acan.txt
+pfa	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pfa/pathway_pfa.txt
+pfd	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pfd/pathway_pfd.txt
+pfh	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pfh/pathway_pfh.txt
+pyo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pyo/pathway_pyo.txt
+pcb	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pcb/pathway_pcb.txt
+pbe	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pbe/pathway_pbe.txt
+pkn	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pkn/pathway_pkn.txt
+pvx	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pvx/pathway_pvx.txt
+pcy	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pcy/pathway_pcy.txt
+tan	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tan/pathway_tan.txt
+tpv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tpv/pathway_tpv.txt
+tot	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tot/pathway_tot.txt
+beq	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/beq/pathway_beq.txt
+bbo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bbo/pathway_bbo.txt
+bmic	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/bmic/pathway_bmic.txt
+cpv	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cpv/pathway_cpv.txt
+cho	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/cho/pathway_cho.txt
+tgo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tgo/pathway_tgo.txt
+tet	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tet/pathway_tet.txt
+ptm	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ptm/pathway_ptm.txt
+smin	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/smin/pathway_smin.txt
+pti	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pti/pathway_pti.txt
+fcy	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/fcy/pathway_fcy.txt
+tps	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tps/pathway_tps.txt
+ngd	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ngd/pathway_ngd.txt
+aaf	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/aaf/pathway_aaf.txt
+pif	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/pif/pathway_pif.txt
+psoj	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/psoj/pathway_psoj.txt
+spar	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/spar/pathway_spar.txt
+ehx	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ehx/pathway_ehx.txt
+gtt	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/gtt/pathway_gtt.txt
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbr png complete
+tbr kgml complete
+tbr png complete
+tbg	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tbg/pathway_tbg.txt
+tcr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tcr/pathway_tcr.txt
+lma	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lma/pathway_lma.txt
+lif	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lif/pathway_lif.txt
+ldo	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ldo/pathway_ldo.txt
+lmi	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lmi/pathway_lmi.txt
+lbz	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lbz/pathway_lbz.txt
+lpan	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/lpan/pathway_lpan.txt
+ngr	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/ngr/pathway_ngr.txt
+tva	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/tva/pathway_tva.txt
+gla	not exists pathways/mnt/ilustre/users/ruiyang.gao/Database/KEGG/OrgPathway/Prokaryotes/gla/pathway_gla.txt
