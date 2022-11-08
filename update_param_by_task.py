@@ -34,20 +34,7 @@ class RefUpdate(object):
         print conn
         return results
 
-    def update_by_task(self, main_table, detail_table, query_dict):
-        print query_dict
-        main_records = self.find_records(main_table, query_dict)
-        for rec in main_records:
-            main_id = rec["main_id"]
-            name = rec["name"]
-            detail = self.find_record(detail_table, {"geneset_id": main_id})
-            seq_list  =detail["seq_list"]
-            if name.endswith("down_mRNA"):
-                update = {"regulate_list": ["down" for i in range(len(seq_list))]}
-            else:
-                update = {"regulate_list": ["up" for i in range(len(seq_list))]}
-            self.update_record_by_dict(detail_table, {"geneset_id": main_id}, update)
-            self.update_record_by_dict(main_table, query_dict, {"source": "diff_exp"})
+
 
     def update_by_query(self, detail_table, query_dict):
         # print query_dict
@@ -98,12 +85,37 @@ class RefUpdate(object):
             except:
                 print "cat not update {}".format(record)
 
+    def update_params_by_dict(self, collection_name, query_dict, insert_dict):
+        '''
+        query_dict:  query_dict
+        insert_dict: insert_dict
+        '''
+        query_dict = eval(query_dict)
+        insert_dict = eval(insert_dict)
+        print query_dict
+        records = self.find_records(collection_name, query_dict)
+        for record in records:
+            try:
+                # print dict(record)
+                if "params" in record:
+                    params_dict = dict(json.loads(record["params"]))
+                    params_dict.update(insert_dict)
+
+                    update_dict = {
+                        "params": json.dumps(params_dict, sort_keys=True, separators=(',', ':')))
+                    } 
+                    
+                else:
+                    print("params not in record deleted or error ? ")
+                self.update_record_by_dict(collection_name, dict(record), insert_dict)
+            except:
+                print "cat not update {}".format(record)
+
                         
 if __name__ == '__main__':
 
     cmd_samples = '''
-python ./update_by_table.py  -p small_rna -c sg_annotation_query_detail   -t table -q_f 'lambda x:{"query_id" : ObjectId("5c1b4504a4e1af70b4bd4543"), "transcript_id":x[0]}' -i_f 'lambda x:{"gene_name": x[1]}'
-python update_by_table.py -m one2many -c sg_annotation_query_detail -p prok_rna -q '{"query_id":ObjectId("5bd993cc28fb4f0b8e150f4f"), "ko_id":None}' -i '{"ko_id":""}'
+
 '''
     os.environ["current_mode"]="workflow"
     os.environ["NTM_PORT"]="7322"
@@ -118,7 +130,9 @@ python update_by_table.py -m one2many -c sg_annotation_query_detail -p prok_rna 
     args = parser.parse_args()
 
     update_api = RefUpdate(args.p)
-    query_dict = {"task_id": args.t, "source": "non_diff_exp"}
-    update_api.update_by_query("circrna_identify_detail", {"detail_id" : ObjectId("617bbfeeff1f72bd38f1a928")})
+    query_dict = {}
+    insert_dict = {"collection": "Human"}
+    collection_name = "sg_geneset_gsea"
+    update_api.update_params_by_dict(collection_name, query_dict, insert_dict)
 
 #  python ./update_by_table.py  -p small_rna -c sg_annotation_query_detail   -t table -q_f 'lambda x:{"query_id" : ObjectId("5c1b4504a4e1af70b4bd4543"), "transcript_id":x[0]}' -i_f 'lambda x:{"gene_name": x[1]}'
