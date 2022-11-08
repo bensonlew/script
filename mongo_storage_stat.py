@@ -37,6 +37,8 @@ class MongoStorageStat(object):
         collection_list = list()
         for coll in colls:
             # stat_dict = self.db[coll].stats()
+            if coll in ["system.profile"]:
+                continue
             try:
                 stat_dict = self.db.command("collstats", coll)
                 coll_c = self.db[coll]
