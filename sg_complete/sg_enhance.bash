@@ -138,7 +138,7 @@ sgtool_ele() {
 
 sgtool_path() {
     tool_class_pk=$1
-    cat tool_class_pk |grep "mbio.tools" |sed 's/\./\//g'
+    cat $tool_class_pk |grep "mbio.tools" |sed 's/\./\//g'
 }
 
 sgcode_less(){
