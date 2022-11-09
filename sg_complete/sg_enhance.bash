@@ -105,8 +105,21 @@ _auto_sgtool_ele() {
 EOF
 }
 
+_auto_sgtool_ele2() {
+    local cur
+    cur=${COMP_WORDS[*]:1}
+    regex="*.pk"
+    comps=$(find ./ -type f -name "*.pk" -print |grep "class.pk"| peco)
+    while read i; do
+        COMPREPLY=("${COMPREPLY[@]}" "${i}")
+    done <<EOF
+    $comps
+EOF
+}
+
 complete -F _auto_sgtool_ele sgtool_ele
 complete -F _auto_sgtool_ele sgtool_edit
+complete -F _auto_sgtool_ele2 sgtool_path
 
 sgtool_ele() {
     tool_pk=$1
@@ -116,6 +129,16 @@ sgtool_ele() {
 sgtool_edit() {
     tool_pk=$1
     bash $tool_ele_edit $tool_pk
+}
+
+sgtool_ele() {
+    tool_pk=$1
+    python $tool_ele $tool_pk 
+}
+
+sgtool_path() {
+    tool_class_pk=$1
+    cat tool_class_pk |grep "mbio.tools" |sed 's/\./\//g'
 }
 
 sgcode_less(){
