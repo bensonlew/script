@@ -14,9 +14,11 @@ suppressMessages(library(tidyverse))
 suppressMessages(library(getopt))
 suppressMessages(library(Seurat))
 suppressMessages(library(RColorBrewer))
-source("/mnt/ilustre/users/haowen.zhou/dev_files/R-m3-test/m3_custom_func.R")
 
+# script_path <- "~/wpm2/sanger_bioinfo/src/mbio/packages/scrna"
+# source(paste0(script_path,"/basic/m3_custom_func.R"))
 
+source("~/sg-users/liubinxu/script/R-m3-test/m3_custom_func.R")
 #get parameters
 options(bitmapType='cairo')
 command = matrix(c(
