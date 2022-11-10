@@ -15,8 +15,8 @@ suppressMessages(library(getopt))
 suppressMessages(library(Seurat))
 suppressMessages(library(RColorBrewer))
 suppressMessages(library(ggpubr))
-source("/mnt/ilustre/users/haowen.zhou/dev_files/R-m3-test/m3_custom_func.R")
-
+# source("/mnt/ilustre/users/haowen.zhou/dev_files/R-m3-test/m3_custom_func.R")
+source("~/sg-users/liubinxu/script/R-m3-test/m3_custom_func.R")
 
 
 #get parameters
