@@ -8,6 +8,7 @@ curpath=$HOME"/sg-users/liubinxu/script/sg_complete"
 pecopath=$HOME"/sg-users/liubinxu/soft/peco_linux_amd64"
 runwork=$HOME"/wpm2/bin/run_work "
 tool_ele=$HOME"/sg-users/liubinxu/script/tool_ele.py "
+tool_env=$HOME"/sg-users/liubinxu/script/tool_env.py "
 tool_ele_edit=$HOME"/sg-users/liubinxu/script/sg_pickle_edit.sh "
 BIOCLUSTER_DIR=$HOME/wpm2/sanger_bioinfo
 
@@ -118,6 +119,7 @@ EOF
 }
 
 complete -F _auto_sgtool_ele sgtool_ele
+complete -F _auto_sgtool_ele sgtool_env
 complete -F _auto_sgtool_ele sgtool_edit
 complete -F _auto_sgtool_ele2 sgtool_path
 
@@ -136,9 +138,15 @@ sgtool_ele() {
     python $tool_ele $tool_pk 
 }
 
+sgtool_env() {
+    tool_pk=$1
+    class_pk=`echo "Psudotime.pk" |sed 's/\.pk/_class\.pk/g'`
+    python $tool_env $class_pk $tool_pk 
+}
+
 sgtool_path() {
     tool_class_pk=$1
-    cat tool_class_pk |grep "mbio.tools" |sed 's/\./\//g'
+    cat $tool_class_pk |grep "mbio.tools" |sed 's/\./\//g'
 }
 
 sgcode_less(){
