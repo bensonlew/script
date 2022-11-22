@@ -8,6 +8,27 @@
 #_  / / / / / /_/ /  / / / /_/ / /__ _  / /  __/___/ / 
 #/_/ /_/ /_/\____//_/ /_/\____/\___/ /_/  \___//____/ 
 
+
+# 以下为monocle3安装步骤， 切记不要调整安装顺序，尤其是monocle3和gdal的顺序， 如果遇到网络问题多试几次
+# sh Miniconda3-py39_4.12.0-Linux-x86_64.sh
+# cd miniconda3_py39/
+# PATH=/mnt/lustre/users/sanger/app/bioinfo/scrna_10x/miniconda3_py39/bin:$PATH
+
+# conda install -c conda-forge gdal=3.5.0
+# ./conda install -c conda-forge r-base r
+# ./conda install -c conda-forge r-sf
+# ./conda install -c bioconda r-monocle3
+# ./conda install -c bioconda r-seurat
+# ./conda install -c conda-forge cmake
+
+# R
+
+# install.packages("readr")
+# install.packages("tidyverse")
+# install.packages("getopt")
+# install.packages("ggpubr")
+
+
 suppressMessages(require(readr))
 suppressMessages(require(monocle3))
 suppressMessages(library(tidyverse))
