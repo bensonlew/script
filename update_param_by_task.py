@@ -21,8 +21,15 @@ class RefUpdate(object):
     
     def update_record_by_dict(self, collection_name, query_dict, insert_dict):
         conn = self.db[collection_name]
-        print query_dict
-        conn.update(query_dict, {"$set": insert_dict}, upsert=True)
+        print(query_dict)
+        print("***", query_dict)
+        if "_id" in query_dict:
+            query_dic = {"_id": query_dict["_id"]}
+        else:
+            query_dic = query_dict
+        print query_dic
+        print insert_dict
+        conn.update(query_dic, {"$set": insert_dict}, upsert=True)
 
     def find_record(self, collection_name, query_dict):
         conn = self.db[collection_name]
@@ -82,34 +89,45 @@ class RefUpdate(object):
             try:
                 # print dict(record)
                 self.update_record_by_dict(collection_name, dict(record), insert_dict)
-            except:
-                print "cat not update {}".format(record)
+            except Exception as e:
+                print "cat not update {}".format()
 
     def update_params_by_dict(self, collection_name, query_dict, insert_dict):
         '''
         query_dict:  query_dict
         insert_dict: insert_dict
         '''
-        query_dict = eval(query_dict)
-        insert_dict = eval(insert_dict)
+        # query_dict = eval(query_dict)
+        # insert_dict = eval(insert_dict)
         print query_dict
         records = self.find_records(collection_name, query_dict)
         for record in records:
             try:
+
+                print("aaa")
+                print(record)
                 # print dict(record)
                 if "params" in record:
+                    print("params in record")
                     params_dict = dict(json.loads(record["params"]))
+                    print("params dict {}".format(params_dict))
+                    if "collection" in params_dict:
+                        print(params_dict["collection"])
+                    else:
+                        print(record["_id"])
                     params_dict.update(insert_dict)
-
+                    
                     update_dict = {
-                        "params": json.dumps(params_dict, sort_keys=True, separators=(',', ':')))
+                        "params": json.dumps(params_dict, sort_keys=True, separators=(',', ':'))
                     } 
                     
                 else:
                     print("params not in record deleted or error ? ")
-                self.update_record_by_dict(collection_name, dict(record), insert_dict)
-            except:
-                print "cat not update {}".format(record)
+                print(record)
+                self.update_record_by_dict(collection_name, dict(record), update_dict)
+            except Exception as e:
+                # print "cat not update {}".format(record)
+                print e
 
                         
 if __name__ == '__main__':
