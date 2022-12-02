@@ -41,6 +41,21 @@ EOF
 }
 complete -F _auto_sgcdw sgcdw
 
+_auto_sgcdwt() {
+    local cur
+    cur=${COMP_WORDS[*]:1}
+    # regex=".*"$cur".*"
+
+    comps=$(ls -d /mnt/lustre/sanger-dev_workspace*/*/*$cur* | peco)
+    while read i; do
+        COMPREPLY=("${COMPREPLY[@]}" "${i}")
+    done <<EOF
+    $comps
+EOF
+}
+complete -F _auto_sgcdwt sgcdwt
+
+
 # 获取工作流目录
 _get_wd() {
     dir=$1
@@ -102,6 +117,17 @@ sgcd() {
 }
 
 sgcdw(){
+    output="${@}"
+    if [[ -d "${output}" ]]; then
+        echo -e "${output}"
+        cd "${output}"
+    else
+        echo "directory '${@}' not found"
+        echo "\n${output}\n"
+    fi
+}
+
+sgcdwt(){
     output="${@}"
     if [[ -d "${output}" ]]; then
         echo -e "${output}"
