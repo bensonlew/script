@@ -1,0 +1,32 @@
+// sanger
+mongodb://meta:v6m4t7w9y6x5@10.11.1.102,10.11.1.106,10.11.1.110:27017/sanger?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_0&3t.databases=sanger&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_ref_rna
+mongodb://rna:y6a3t5n1w0y7@10.100.1.10:27017/sanger_ref_rna?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_ref_rna&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_ref_rna_0&3t.databases=sanger_ref_rna&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_denovo_rna_v2
+mongodb://rna:y6a3t5n1w0y7@10.100.1.10:27017/sanger_ref_rna?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_denovo_rna_v2&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_denovo_rna_v2_0&3t.databases=sanger_denovo_rna_v2&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_ref_rna_v2
+mongodb://rna:y6a3t5n1w0y7@10.100.1.10:27017/sanger_ref_rna_v2?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_ref_rna_v2&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_ref_rna_v2_0&3t.databases=sanger_ref_rna_v2&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_smallrna
+mongodb://smallrna:md3f29asdf3@10.100.1.10:27017/sanger_smallrna?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_smallrna&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_smallrna_0&3t.databases=sanger_smallrna&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_lnc_rna
+mongodb://lncrna:y6a3t5n1w0y7@10.100.1.10:27017/sanger_lnc_rna?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_lnc_rna&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_lnc_rna_0&3t.databases=sanger_lnc_rna&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_prok_rna
+mongodb://prok_rna:y4g1v6r9d0@10.100.1.10:27017/sanger_prok_rna?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_prok_rna&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_prok_rna_0&3t.databases=sanger_prok_rna&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_tool_lab
+mongodb://sanger_tool_lab:ce85tySZTeEFiSJ2@10.11.1.102,10.11.1.106,10.11.1.110:27017/sanger_tool_lab?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_tool_lab&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_tool_lab_0&3t.databases=sanger_tool_lab&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_ref_genome_db
+mongodb://rna:y6a3t5n1w0y7@10.8.0.23:27017/sanger_ref_rna_v2?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_ref_genome_db&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_ref_genome_db_0&3t.databases=sanger_ref_genome_db&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_whole_transcriptome
+mongodb://whole_transcriptome:y6a3t5n1w0y7@10.100.1.10:27017/sanger_whole_transcriptome?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_whole_transcriptome&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_whole_transcriptome_0&3t.databases=sanger_whole_transcriptome&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_medical_transcriptome
+mongodb://medical_transcriptome:y6a3t5n1w0y7@10.8.0.23:27017/sanger_medical_transcriptome?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_medical_transcriptome&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_medical_transcriptome_0&3t.databases=sanger_medical_transcriptome&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger
+mongodb://meta:v6m4t7w9y6x5@10.11.1.102,10.11.1.106,10.11.1.110:27017/sanger?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_0&3t.databases=sanger&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_labelfree
+mongodb://labelfree:y4g1v6r9d0@10.100.1.10:27017/sanger_labelfree?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_labelfree&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_labelfree_0&3t.databases=sanger_labelfree&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_dia
+mongodb://dia:y4g1v6r9d0@10.11.1.102,10.11.1.106,10.11.1.110:27017/sanger_dia?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_dia&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_dia_0&3t.databases=sanger_dia&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger
+mongodb://meta:v6m4t7w9y6x5@10.11.1.102,10.11.1.106,10.11.1.110:27017/sanger?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_0&3t.databases=sanger&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
+// sanger_dia_4d
+mongodb://dia:v6m4t7w9y6x5@10.11.1.102,10.11.1.106,10.11.1.110:27017/sanger_dia_4d?serverSelectionTimeoutMS=5000&connectTimeoutMS=10000&authSource=sanger_dia_4d&authMechanism=SCRAM-SHA-1&3t.uriVersion=3&3t.connection.name=c_sanger_dia_4d_0&3t.databases=sanger_dia_4d&3t.alwaysShowAuthDB=true&3t.alwaysShowDBFromUserRole=true
