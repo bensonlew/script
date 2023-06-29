@@ -19,22 +19,21 @@ import argparse
 import pandas as pd
 from mbio.api.database.mongo.mongo_backup import MongoBackup 
 
-
-
             
+
 
 if __name__ == '__main__':
     import sys
-    os.environ["current_mode"]="tool"
+    os.environ["current_mode"]="workflow"
     os.environ["NTM_PORT"]="7322"
     os.environ["WFM_PORT"]="7321"
 
-
     ContractID = sys.argv[1]
 
-    
     os.environ["ContractID"] = ContractID
     # test_api = MongoBackup(bind_object=None)
 
     project_type = sys.argv[2]
     db = Config().get_mongo_client(mtype=project_type)[Config().get_mongo_dbname(project_type)]
+    colls = db.list_collection_names()
+
